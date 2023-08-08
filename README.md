@@ -1,1 +1,1 @@
-# MEAN-Example
+# Mean-Stack-Example
