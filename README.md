@@ -5,15 +5,13 @@ Welcome to My Mean Stack Example
 I have created this project to help build a better understanding of how the Mongodb, Express, Angular and Node technology stack can be implemented when creating a restful api, currently the project is a work in progress and is likely to be updated frequently. The project is set around a online movie store 
 where users can register to purchase and download movies from an online movie store.
 
-**_Diagrams_**
-
-**Use-case**
+**_Use-case_**
 ![Movies$You usecase](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/2948d55e-3692-4b0f-b879-88adebce51e3)
 
-**System Overview**
+**_System Overview_**
 ![System overview rest api](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/308dbf4f-53e8-4905-8381-33ff525352f0)
 
-**Initial Class**
+**_Initial Class_**
 ![movies4you class diagram](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/b817a05c-7c97-4744-b3b6-9ba62f6b1437)
 
 **_Screen-shots_**
