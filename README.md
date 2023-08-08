@@ -20,6 +20,50 @@ Initial Class Diagram
 
 ![movies4you class diagram](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/b817a05c-7c97-4744-b3b6-9ba62f6b1437)
 
+**_Project Setup_**
+
+**Step 1**
+
+The initial step to be taken is to decide which IDE to use to when developing the system, I have decided to use VS Code as it is light
+weight, easy to use and provides all the neccesary functionalities needed. It can be downloaded from here https://code.visualstudio.com/download and you will also find links to offical installation and user guides there too.
+
+**Step 2**
+
+Next a folder needs to be created to hold the project files, the location of the folder should be accesable to VS Code (the IDE)
+as it will need to access the files within it, I simpley created a new folder on the desktop.
+
+**Step 3**
+
+As we will be using node on the server side it will also need to be installed, you can find the latest version and 
+links to the installation guide here https://nodejs.org/en , once installed open VS Code run the following commands in the
+terminal to check node and NPM (Node Package Manager) has been installed and which versions are being used, 
+
+node --version
+
+npm --version
+
+
+**Step 4**
+As we will be using Angular on the frontend Angular/CLI will also need to be installed, this will help create the project
+structure and also allow us to us simple commands to carry out various tasks. It can be install globally using the node package manager (NPM) via the following command 
+
+npm install -g @angular/cli
+
+**Step 5**
+Next because Mongodb is the choosen database it will also need to be installed via https://www.mongodb.com/pricing Selecting the option which best suits your needs,  there are also links with that page which can navigate you to numerous MongoDB tutorials to help fully understand how the database is used.
+
+**Step 6**
+
+
+
+
+
+
+
+
+
+
+
 
 
 **_Screen-shots_**
