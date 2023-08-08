@@ -1,0 +1,28 @@
+<div class="login-form background-primary">
+  <div class="container">
+      <div class="grid">
+          <div class="coffee-icon">
+              <img src="./assets/icons/sign-up.png" alt="person icon">
+          </div>
+          <div class="card text-center">
+              <form [formGroup] ="loginForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                      <label for="username">Username</label><br>
+                      <input class = "form-control" type="email" id="username" formControlName="username" minlength="8"
+                          maxlength="20" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password</label><br>
+                      <input class = "form-control" type="password" id="password" formControlName="password" minlength="8"
+                          maxlength="20" required>
+                  </div><br>
+
+                  <app-spinner class="background-primary text-center" *ngIf="loading | async; else elseBlock "></app-spinner>
+                  <ng-template #elseBlock>
+                      <button class="btn" type="submit">login</button>
+                  </ng-template>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

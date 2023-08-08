@@ -1,0 +1,51 @@
+/*adjust styles to elements*/
+.footer{
+  position: bottom;
+  height: 15%;
+  width: 100%;
+  padding-top: 23px;
+  overflow: visible;
+}
+
+.footer .socials{
+  justify-content: space-between;
+  justify-items: center;
+  padding: 10px;
+}
+
+.socials .facebook-icon img{
+  height: 50px;
+  width: 50px;
+}
+.socials .instagram-icon img{
+  height: 50px;
+  width: 50px;
+}
+.socials .twitter-icon img{
+  height: 50px;
+  width: 50px;
+}
+
+/*Mobile*/
+@Media(max-width:500px){
+  .footer.footer{
+      position: sticky;
+      max-height: 10px;
+  }
+  .socials.flex{
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+}
+
+/*Tablet*/
+@Media(max-width:760px){
+  .footer.footer{
+      position: sticky;
+      max-height: 20%;
+  }
+
+  .grid{
+      gap:10px;
+  }
+}

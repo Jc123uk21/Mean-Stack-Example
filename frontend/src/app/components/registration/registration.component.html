@@ -1,0 +1,31 @@
+<div class="registration backgroung-primary">
+  <div class="container grid">
+      <form [formGroup]="form" class = "reg-form text-center" (ngSubmit)="onSubmit()">
+          <h4>Register</h4>
+          <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" formControlName="firstName" class="form-control" minlength="2" maxlength="25" id = "firstName" required>
+          </div>
+          <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text"formControlName="lastName"  class="form-control" minlength="2" maxlength="25" id = "lastName" required>
+          </div>
+          <div class="form-group">
+              <label for="username">Username</label>
+              <input type="email" formControlName="username" class="form-control" minlength="8" maxlength="20" id = "username" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" formControlName="password" class="form-control" minlength="8" maxlength="20" id = "password" required>
+          </div>
+          <app-spinner class="background-primary text-center" *ngIf="loading | async; else elseBlock "></app-spinner>
+          <ng-template #elseBlock>
+            <button class="btn" type="Add Movie">login</button>
+        </ng-template>
+      </form>
+      <div class="shop-icon">
+          <img src="./assets/icons/sign-up.png" alt="shop">
+      </div>
+  </div>
+</div>
+

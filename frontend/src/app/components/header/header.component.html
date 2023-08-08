@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg background-primary bg-gradient">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" routerLink= "">Movies4You</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a *ngIf="!isLoggedIn" class="nav-link active text-light" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="isLoggedIn" class="nav-link active text-light" routerLink='userHome'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink='/movie/all'>Movies</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink='services'>Services</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink='contact'>Contact us</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul *ngIf="!isLoggedIn" class="navbar-nav end">
+          <li><a class="nav-link active text-light" routerLink="register">Register</a></li>
+          <li><a class="nav-link active text-light" routerLink="login-page">Login</a></li>
+      </ul>
+      <ul *ngIf="isLoggedIn" class="navbar-nav end">
+        <li><a class="nav-link active text-light" routerLink="my-account">My Account</a></li>
+        <li><a class="nav-link active text-light" routerLink="cart">Cart</a></li>
+        <li><button class="btn text-colour-secondary" (click)="logout()" >Logout</button></li>
+    </ul>
+    </div>
+  </div>
+</nav>

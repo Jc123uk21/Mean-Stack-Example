@@ -1,0 +1,19 @@
+/*adjust styles to elements*/
+.background-colour-primary{
+  background-color: darkolivegreen ;
+}
+
+.navbar{
+  position: sticky;
+  z-index: 1;
+}
+
+.btn{
+  background-color:#fff;
+}
+
+.btn-outline{
+  background-color: transparent;
+  border: 1px burlywood solid;
+}
+

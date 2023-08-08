@@ -1,0 +1,24 @@
+<div class="movie-list text-center background-primary bg-gradient">
+  <h3>Available Movies</h3>
+  <div class="container flex">
+      <div class = "movie-cards" *ngFor="let movie of movies">
+          <div class="card">
+              <h4>{{movie.title}}</h4><br>
+              <img src = "./assets/icons/watching-a-movie.png" alt= {{movie.title}}><br>
+              <p>Age Rating {{movie.ageRating}}</p>
+              <p>Purchase for £{{movie.price}}</p>
+              <p>User Rating {{movie.userRating}}</p>
+              <div class ="grid">
+               <div>
+                  <a href="">more info</a>
+                  </div>
+                  <div *ngIf ="isLoggedIn">
+                     <button (click)="addToCart()">Add to cart</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+

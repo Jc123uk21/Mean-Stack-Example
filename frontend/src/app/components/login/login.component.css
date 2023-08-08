@@ -1,0 +1,55 @@
+/*adjust styles to elements*/
+.login-form{
+
+  height: 520px;
+}
+
+.form{
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+.grid{
+  justify-content:center;
+}
+.login-form .card{
+  position: relative;
+  justify-self: center;
+  height: 280px;
+  width: 400px;
+}
+
+.coffee-icon img{
+  height: 330px;
+  width: 370px;
+  padding-left: 80px;
+}
+.btn{
+  background-color: #c39bd3;
+}
+
+/*Mobile*/
+@Media(max-width:500px){
+  .login-form .container{
+      height: 500px;
+  }
+  .login-form{
+      height: auto;
+      padding-bottom: 20px;
+  }
+  .card{
+      max-height : 250px;
+      margin-bottom: 50px;
+  }
+
+}
+
+@Media(max-width:768px){
+  .card{
+      max-width: 350px;
+      padding-top: 25px;
+  }
+}

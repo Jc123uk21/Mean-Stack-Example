@@ -1,0 +1,69 @@
+.movie-list{
+  min-height: 550px;
+}
+
+.container{
+  padding-top: 20px;
+}
+.flex{
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1rem;
+  border-radius: 4%;
+  border-color: #fff;
+}
+.movie-cards{
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  margin-right: 8px;
+  border-radius: 13px;
+}
+.movie-cards .card{
+  height: 320px;
+  width: 250px;
+}
+.card a{
+  color: black;
+}
+.card img{
+  height: 60px;
+  width: 80px;
+}
+
+.container{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Mobile*/
+@Media(max-width: 500px){
+  .container.flex{
+      padding-bottom: 25px;
+  }
+  .movie-cards.card{
+      padding-bottom: 20px;
+  }
+
+  .card{
+      height: 100px;
+  }
+
+  h3{
+      padding-top: 10px;
+  }
+}
+
+/*Tablet*/
+@Media(max-width:768px){
+  .container.flex{
+      padding-bottom: 25px;
+  }
+  .movie-cards.card{
+      padding-bottom: 20px;
+  }
+
+  h3{
+      padding-top: 10px;
+  }
+}
