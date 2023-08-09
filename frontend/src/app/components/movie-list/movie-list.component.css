@@ -5,6 +5,7 @@
 .container{
   padding-top: 20px;
 }
+
 .flex{
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,7 +22,7 @@
 }
 .movie-cards .card{
   height: 320px;
-  width: 250px;
+  width: 270px;
 }
 .card a{
   color: black;

@@ -32,7 +32,8 @@
       </ul>
       <ul *ngIf="isLoggedIn" class="navbar-nav end">
         <li><a class="nav-link active text-light" routerLink="my-account">My Account</a></li>
-        <li><a class="nav-link active text-light" routerLink="cart">Cart</a></li>
+        <li><a class="nav-link active text-light" routerLink="cart">Cart
+          <span *ngIf="cartQuantity">{{cartQuantity}}</span></a></li>
         <li><button class="btn text-colour-secondary" (click)="logout()" >Logout</button></li>
     </ul>
     </div>

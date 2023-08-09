@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Movie } from 'src/app/models/movie';
 import { AuthService } from 'src/app/security/auth-service.service';
 import { CartService } from 'src/app/services/cart.service';
@@ -23,7 +23,10 @@ export class MovieListComponent implements OnInit{
   private cartService: CartService, private router: Router){}
 
   //add movie to cart
-  addToCart(){
+  addToCart(movie: Movie){
+
+     this.movie = movie;
+     console.log(this.movie);
     //Add movie to cart
     this.cartService.addToCart(this.movie);
     //route user to cart page

@@ -1,1 +1,33 @@
-<p>cart works!</p>
+<div class="container">
+  <ul>
+    <li *ngFor ="let cartitem of cart.items ">
+      <div>
+        <img src="./assets/icons/watching-a-movie.png" alt="image of movie">
+      </div>
+      <div>
+        <a routerLink="/movie/{{cartitem.movie._id}}">{{cartitem.movie.title}}</a>
+      </div>
+      <div>
+        {{cartitem.movie.price| currency}}
+      </div>
+      <div>
+        <button class="btn" (click)="removeFromCart(cartitem)">remove</button>
+      </div>
+    </li>
+  </ul>
+
+  <div class="checkout">
+    <div>
+      <div class="movie-count">
+        {{cart.totalCount}}
+      </div>
+      <div class="total-price">
+        {{cart.totalPrice |currency}}
+      </div>
+
+      <a routerLink="/checkout">Proceed to check-out</a>
+    </div>
+
+  </div>
+</div>
+

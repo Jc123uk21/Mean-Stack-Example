@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/security/auth-service.service';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -10,8 +11,12 @@ import { AuthService } from 'src/app/security/auth-service.service';
 export class HeaderComponent implements OnInit{
    //variable to hold attribute for users logged in status
    isLoggedIn?: boolean;
-
-   constructor(private router: Router, private authService: AuthService){
+   cartQuantity = 0;
+   constructor(private router: Router, private authService: AuthService,
+                private cartService: CartService){
+                  cartService.getCartObservable().subscribe((newCart)=>{
+                    this.cartQuantity = newCart.totalCount;
+                  })
    }
 
    //logout function called by logout button
