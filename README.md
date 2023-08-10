@@ -44,15 +44,51 @@ npm --version
 
 
 **Step 4**
+
 As we will be using Angular on the frontend Angular/CLI will also need to be installed, this will help create the project
 structure and also allow us to us simple commands to carry out various tasks. It can be install globally using the node package manager (NPM) via the following command 
 
-npm install -g @angular/cli
+      npm install -g @angular/cli
 
 **Step 5**
+
 Next because Mongodb is the choosen database it will also need to be installed via https://www.mongodb.com/pricing Selecting the option which best suits your needs,  there are also links with that page which can navigate you to numerous MongoDB tutorials to help fully understand how the database is used.
 
 **Step 6**
+
+This step requires us to generate a new angular project within vs code using angluar/cli via the following command
+      
+      ng new < your project name>   
+      
+when prompted add angular routing and css to the project, once npm has finished installing the required packages and created the project
+file structure two new folders will need to be created to hold the frontend and backend of the application as follows
+
+![initial file structure](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/7e3b0e74-20d8-4e2a-be3d-0d27790efaf7)
+
+**Step 7**
+
+Here we will begin to create the backend of our application, within vs code change the working directory of the terminal to the backend folder with the following command
+
+    cd backend
+
+Next we need to import all the necessary packages to the backend of the project, here we use the NPM to install them for us with the 
+following command 
+
+    nmp install express consola body-parser jsonwebtoken passport passport-jwt cors dotenv 
+
+_**Building the backend**_
+
+
+**The Models**
+
+Next we need to add a new folder within the backend folder we created earlier named Model, within this folder we will place all our
+model objects
+
+
+_**User Model**_
+
+Here we begin by creating our user model to hold all the user attributes which will be held within the database, 
+
 
 
 
