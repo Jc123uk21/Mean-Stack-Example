@@ -71,32 +71,50 @@ Here we will begin to create the backend of our application, within vs code chan
 
     cd backend
 
+Next we need to add a package.json file to the backend file structure to keep record of all the packages which are needed by the backend
+of the application and we can add this file with the following command
+
+            npm init -y
+
+we have stuck with the default value for simplicity
+
+
 Next we need to import all the necessary packages to the backend of the project, here we use the NPM to install them for us with the 
 following command 
 
-    nmp install express consola body-parser jsonwebtoken passport passport-jwt cors dotenv 
+    nmp install express consola body-parser jsonwebtoken passport passport-jwt cors dotenv nodemon mongoose mongodb
+
+Here we have choosen express for the server side, consola to give the console a better feel, body-parser to parse JSON data,
+jsonwebtoken for securing our application, passport and passport-jwt to aid securing rest endpoints, cors to protect against
+cross-sight-forgery, dotenv to help load our configuration file and finally nodemon to ensure the server compiles and restarts when
+we have made any changes to the system, mongodb for our data storage and mongoose to interact with the database
+
+
 
 _**Building the backend**_
+
+**Adding the index.js file**
+we next added the index.js file using the folowing command
+
+      touch index.js
 
 
 **The Models**
 
-Next we need to add a new folder within the backend folder we created earlier named Model, within this folder we will place all our
+Next we need to add a new folder within the backend folder we created earlier named models, within this folder we will place all our
 model objects
 
 
-_**User Model**_
-
-Here we begin by creating our user model to hold all the user attributes which will be held within the database, 
+![models folder added](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/27054c30-77fc-4b5e-baa3-ba8f04ef2aac)
 
 
+_**File structure**_
 
+Here is where we have created mongoose schema's of all of our model objects and their attributes as they will be held and accessed within the database
+            
+![user model](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/aaf6bce3-94d2-406f-868b-ed1b8d6152bc)
 
-
-
-
-
-
+_**User.js**_
 
 
 
