@@ -38,9 +38,9 @@ As we will be using node on the server side it will also need to be installed, y
 links to the installation guide here https://nodejs.org/en , once installed open VS Code run the following commands in the
 terminal to check node and NPM (Node Package Manager) has been installed and which versions are being used, 
 
-node --version
+      node --version
 
-npm --version
+      npm --version
 
 
 **Step 4**
