@@ -94,27 +94,19 @@ we have made any changes to the system, mongodb for our data storage and mongoos
 _**Building the backend**_
 
 **Adding the index.js file**
-we next added the index.js file using the folowing command
+we next added the index.js file as it will be the entry point of the backend of our system, create it using the folowing command
 
       touch index.js
+      
+**Creating the backend file strcuture**
 
-
-**The Models**
-
-Next we need to add a new folder within the backend folder we created earlier named models, within this folder we will place all our
-model objects
-
+We now need to create the file structure for the backend of the system, we need to create the following folders within the backend folder we have already created, a config folder to hold configuration files, a controller folder to hold all our controllers, a models folder to hold all our model objects, a middlewares folder to hold any middleware framworks we use, a routes folder for holding files containing our routing data, a utility (services) folder to hold our classes which will be used be the system
 
 ![models folder added](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/27054c30-77fc-4b5e-baa3-ba8f04ef2aac)
 
 
 _**File structure**_
 
-Here is where we have created mongoose schema's of all of our model objects and their attributes as they will be held and accessed within the database
-            
-![user model](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/aaf6bce3-94d2-406f-868b-ed1b8d6152bc)
-
-_**User.js**_
 
 
 
