@@ -1,0 +1,44 @@
+.registration{
+  height: 550px;
+  background-color: #047aed;;
+}
+
+.registration .container form.reg-form{
+  background-color: #fff;
+  border: 3px;
+  border-style: none;
+  border-radius: 5%;
+  width: 400px;
+  padding: 30px 30px;
+  justify-self: center;
+}
+
+.container{
+  padding: 20px;
+  justify-content: center;
+}
+
+.shop-icon img{
+  height: 400px;
+  width: 400px;
+}
+
+.btn{
+  background-color: #047aed;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/*Tablet*/
+@Media(max-width:768px){
+  .registration .container form.reg-form{
+      max-width: 300px;
+  }
+}
+
+/*Mobile*/
+@Media(max-width:500px){
+  .registration.container.reg-form{
+      padding-bottom: 20px;
+  }
+}

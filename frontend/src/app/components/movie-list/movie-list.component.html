@@ -10,7 +10,7 @@
               <p>User Rating {{movie.userRating}}</p>
                 <div class ="grid">
                   <div>
-                  <a href="">more info</a>
+                    <button (click)="moreInfo(movie)">More info</button>
                   </div>
                   <div *ngIf ="isLoggedIn">
                      <button (click)="addToCart(movie)">Add to cart</button>

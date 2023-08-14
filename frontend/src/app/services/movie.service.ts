@@ -9,6 +9,7 @@ import { __await } from 'tslib';
 })
 export class MovieService {
 
+  movie!: Movie;
   private options = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
@@ -23,12 +24,12 @@ export class MovieService {
 
   //Get a list of movies by their genre
   getAllMoviesByGenre(genre: string):Observable<Movie[]>{
-    return this.http.get<Movie[]>(this.restUri + '/:' + genre);
+    return this.http.get<Movie[]>(this.restUri +'/' + genre);
   }
 
   //Get a movie by its title
-  getMovieByTitle(title: string):Observable<Movie>{
-    return this.http.get<Movie>(this.restUri + '/:' + title);
+  getMovieByTitle(title: string): Observable<Movie>{
+    return this.http.get<Movie>(this.restUri + '/movie/' + title, this.options);
   }
 
   //Add a movie to database
@@ -36,5 +37,13 @@ export class MovieService {
     return this.http.post(this.restUri + "/movie/add", movie, this.options);
   }
 
+  //Set Movie attributes
+  setMovie(movie:Movie){
+    this.movie = movie;
+  }
 
+  //Get Movie attributes
+  getMovie(): Movie{
+    return this.movie;
+  }
 }

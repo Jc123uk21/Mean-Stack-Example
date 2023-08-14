@@ -22,6 +22,7 @@ import { DetailsComponent } from './components/user-components/details/details.c
 import { UpdateDetailsComponent } from './components/user-components/update-details/update-details.component';
 import { LoadingInterceptor } from './config/loading.interceptor';
 import { CartComponent } from './components/cart/cart.component';
+import { MovieInfoComponent } from './components/movie-info/movie-info.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { CartComponent } from './components/cart/cart.component';
     DetailsComponent,
     UpdateDetailsComponent,
     CartComponent,
+    MovieInfoComponent,
   ],
   imports: [
     BrowserModule,

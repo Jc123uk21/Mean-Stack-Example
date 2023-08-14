@@ -10,6 +10,8 @@ import { AddMovieComponent } from './components/admin-components/add-movie/add-m
 import { AdminHomeComponent } from './components/admin-components/admin-home/admin-home.component';
 import { DetailsComponent } from './components/user-components/details/details.component';
 import { CartComponent } from './components/cart/cart.component';
+import { RegisterAdminComponent } from './components/admin-components/register-admin/register-admin.component';
+import { MovieInfoComponent } from './components/movie-info/movie-info.component';
 
 const routes: Routes = [
 { path:"",
@@ -28,12 +30,20 @@ const routes: Routes = [
   component: RegistrationComponent
 },
 {
+  path:"register/admin",
+  component: RegisterAdminComponent
+},
+{
   path:"login-page",
   component: LoginComponent
 },
 {
   path:"movie/add",
   component: AddMovieComponent
+},
+{
+  path: "movie/:title",
+  component: MovieInfoComponent
 },
 {
   path:"admin/home",

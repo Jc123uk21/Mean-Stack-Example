@@ -33,6 +33,12 @@ export class MovieListComponent implements OnInit{
     this.router.navigateByUrl('/cart');
   }
 
+  //More information function to route to movie information page
+  moreInfo(movie:Movie){
+    this.movieService.setMovie(movie);
+    this.router.navigateByUrl('/movie/' + movie.title);
+  }
+
   ngOnInit(): void {
     this.authService.getIsAuthenticated().subscribe({
       next:res => {

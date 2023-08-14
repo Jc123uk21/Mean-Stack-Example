@@ -1,0 +1,89 @@
+.movie-info{
+  height: 520px;
+}
+
+.info.container{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-img{
+  min-width: 30rem;
+  max-width: 45 rem;
+}
+
+img{
+  border-radius: 3rem;
+  flex: 1 0;
+  object-fit: cover;
+  height:  30rem;
+  margin: 1rem;
+}
+
+.info.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+.movie-title{
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.movie-title::before{
+  content: "Title :";
+  color: black;
+}
+
+.movie-description{
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.movie-description::before{
+  content: "Description :";
+  color: black;
+}
+
+.movie-age{
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.movie-age::before{
+  content: "Age Rating: ";
+  color: black;
+}
+
+.movie-price{
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.movie-price::before{
+  content: "Price :";
+  color: black
+}
+
+.user-rating{
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.user-rating::before{
+  content: "User Rating :";
+  color: black;
+}
+
+.btn{
+  background-color: #fff;
+}
+

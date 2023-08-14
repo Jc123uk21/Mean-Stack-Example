@@ -38,8 +38,7 @@ export class AuthService {
 
   setAuthenticated(token: string){
     if(token !==null){
-      const userToken = this.DecodeToken(token);
-      console.log(userToken);
+      console.log(token);
       localStorage.setItem('token', token);
       console.log(token);
       this.isAuthenticated.next(true);
@@ -59,7 +58,7 @@ export class AuthService {
 
   DecodeToken(token:string): any{
     try{
-      return jwt_decode(token);
+      return jwt_decode(token, {header: true});
     }catch(Error ){
       return Error;
     }

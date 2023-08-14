@@ -1,0 +1,27 @@
+<div class="movie-info background-primary bg-gradient text-center">
+  <div class="container flex">
+    <div  class="movie-img">
+      <img src="./assets/icons/watching-a-movie.png" alt={{movie.title}}>
+    </div>
+    <div class="info">
+      <div class=" container">
+        <div class="movie-title">
+          {{movie.title}}
+        </div><br>
+        <div class="movie-description">
+          {{movie.description}}
+        </div><br>
+        <div class="movie-age">
+          {{movie.ageRating}}
+        </div><br>
+        <div class="movie-price">
+          {{movie.price | currency}}
+        </div><br>
+        <div class="user-rating">
+          {{movie.userRating}}
+        </div><br>
+        <button class = "btn" (click)="addToCart(movie)">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
