@@ -11,9 +11,14 @@ import jwt_decode from 'jwt-decode';
 })
 export class AuthService {
 
+  //Set server base uri
   private authUrl: string = "http://localhost:5000";
 
+  //Set user authentication
   private isAuthenticated = new BehaviorSubject<boolean>(false);
+
+  //Set user role
+  private userRole = new BehaviorSubject<string>("");
 
   private options = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -32,10 +37,13 @@ export class AuthService {
     return localStorage.getItem('token');
   }
 
+  //Get user authenticaion
   getIsAuthenticated():Observable<boolean>{
     return this.isAuthenticated.asObservable();
   }
 
+
+ //Set User authentication
   setAuthenticated(token: string){
     if(token !==null){
       console.log(token);
@@ -45,17 +53,36 @@ export class AuthService {
     }
   }
 
+  //Remove user authentication
   removeAuthentication(){
     if(localStorage.getItem('token') !==null){
      window.localStorage.clear();
      this.isAuthenticated.next(false);
+     this.removeUserRole();
     }
   }
 
+  //Set user role
+  setUserRole(role: string){
+    this.userRole.next(role);
+  }
+
+  //Get User role
+  getUserRole(){
+    return this.userRole.asObservable();
+  }
+
+  //Remove user role
+  removeUserRole(){
+    this.setUserRole("");
+  }
+
+  //Register new user
   register(user: User): Observable<any>{
     return this.http.post<User>(this.authUrl + "/auth/register-user", user,this.options);
   }
 
+  //Decode jwt token
   DecodeToken(token:string): any{
     try{
       return jwt_decode(token, {header: true});

@@ -9,7 +9,7 @@
         <a routerLink="/movie/{{cartitem.movie._id}}">{{cartitem.movie.title}}</a>
       </div>
       <div>
-        {{cartitem.movie.price| currency}}
+        {{cartitem.movie.price| currency:"GBP":"symbol"}}
       </div>
       <div>
         <button class="btn" (click)="removeFromCart(cartitem)">remove</button>
@@ -23,7 +23,7 @@
         {{cart.totalCount}}
       </div>
       <div class="total-price">
-        {{cart.totalPrice |currency}}
+        {{cart.totalPrice |currency:"GBP":"symbol"}}
       </div>
 
       <a routerLink="/checkout">Proceed to check-out</a>

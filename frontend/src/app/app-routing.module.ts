@@ -12,6 +12,8 @@ import { DetailsComponent } from './components/user-components/details/details.c
 import { CartComponent } from './components/cart/cart.component';
 import { RegisterAdminComponent } from './components/admin-components/register-admin/register-admin.component';
 import { MovieInfoComponent } from './components/movie-info/movie-info.component';
+import { MovieMenuComponent } from './components/admin-components/movie-menu/movie-menu.component';
+import { UserMenuComponent } from './components/admin-components/user-menu/user-menu.component';
 
 const routes: Routes = [
 { path:"",
@@ -56,6 +58,14 @@ const routes: Routes = [
 {
   path:"cart",
   component: CartComponent
+},
+{
+  path: "admin/home/movie/menu",
+  component: MovieMenuComponent
+},
+{
+  path:"admin/home/user/menu",
+  component:UserMenuComponent
 }
 ];
 

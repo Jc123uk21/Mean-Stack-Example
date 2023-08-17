@@ -49,13 +49,16 @@ export class LoginComponent implements OnInit{
         console.log(roles);
         //If the user is a normal user direct to the moive list page
         if(roles.includes('user')){
+          this.authService.setUserRole('user');
           this.router.navigateByUrl("movie/all");
         }
         //If the user is an admin user direct them to the admin home page
         else if(roles.includes('admin')){
+          this.authService.setUserRole('admin');
           this.router.navigateByUrl("admin/home");
         }
         else if(roles.includes('superadmin')){
+          this.authService.setUserRole('superadmin');
           this.router.navigateByUrl("superAdmin/home");
         }
       }

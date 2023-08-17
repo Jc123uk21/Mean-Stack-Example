@@ -23,6 +23,8 @@ import { UpdateDetailsComponent } from './components/user-components/update-deta
 import { LoadingInterceptor } from './config/loading.interceptor';
 import { CartComponent } from './components/cart/cart.component';
 import { MovieInfoComponent } from './components/movie-info/movie-info.component';
+import { UserMenuComponent } from './components/admin-components/user-menu/user-menu.component';
+import { MovieMenuComponent } from './components/admin-components/movie-menu/movie-menu.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { MovieInfoComponent } from './components/movie-info/movie-info.component
     UpdateDetailsComponent,
     CartComponent,
     MovieInfoComponent,
+    UserMenuComponent,
+    MovieMenuComponent,
   ],
   imports: [
     BrowserModule,
