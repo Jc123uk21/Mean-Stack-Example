@@ -129,6 +129,12 @@ here we are assigning the database url, the port to be used and a secret key to 
 
 
 
+
+
+
+
+
+
 **_Screen-shots_**
 
 **Home page**
