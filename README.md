@@ -5,6 +5,7 @@ Welcome to My Mean Stack Example
 I have created this project to help build a better understanding of how the Mongodb, Express, Angular and Node technology stack can be implemented when creating a restful api, currently the project is a work in progress and and the project code and walk through is likely to be updated frequently. The project is set around a online movie store where users can register to purchase and download movies from an online movie store, the following use case diagram highlights the interactions needed within the system to be implemented.
 
 Use case diagram
+
 ![Movies$You usecase](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/2948d55e-3692-4b0f-b879-88adebce51e3)
 
 
@@ -85,7 +86,7 @@ following command
 
 Here we have choosen express for the server side, consola to give the console a better feel, body-parser to parse JSON data,
 jsonwebtoken for securing our application, passport and passport-jwt to aid securing rest endpoints, cors to protect against
-cross-sight-forgery, dotenv to help load our configuration file and finally nodemon to ensure the server compiles and restarts when
+cross-site-forgery, dotenv to help load our configuration file and finally nodemon to ensure the server compiles and restarts when
 we have made any changes to the system, mongodb for our data storage and mongoose to interact with the database
 
 
@@ -93,6 +94,7 @@ we have made any changes to the system, mongodb for our data storage and mongoos
 _**Building the backend**_
 
 **Adding the index.js file**
+
 we next added the index.js file as it will be the entry point of the backend of our system, create it using the folowing command
 
       touch index.js
@@ -101,13 +103,19 @@ we next added the index.js file as it will be the entry point of the backend of 
 
 We now need to create the file structure for the backend of the system, we need to create the following folders within the backend folder we have already created, a config folder to hold configuration files, a controller folder to hold all our controllers, a models folder to hold all our model objects, a middlewares folder to hold any middleware framworks we use, a routes folder for holding files containing our routing data, a utility (services) folder to hold our classes which will be used be the system
 
-![models folder added](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/27054c30-77fc-4b5e-baa3-ba8f04ef2aac)
+![backend file structure](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/a4ad1f18-1849-4a73-a16e-1bb7823e816d)
 
+**_Final backend file structure_**
 
-_**File structure**_
+**Backend step 1**
 
+Here we have next created our two modelled objects (movie.js and user.js) using mongoose to aide the serialization of data between the server and data storage layer, we have created these files within the models folder.
 
+![model example](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/2a54f715-043d-4cee-a5aa-de548569ae2c)
 
+**_Example of modelled object using mongoose_**
+
+the key point to remember here is that we are creating a new database schema and then making that available by exporting it to the system as a model object.
 
 
 
