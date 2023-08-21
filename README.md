@@ -117,6 +117,16 @@ Here we have next created our two modelled objects (movie.js and user.js) using 
 
 the key point to remember here is that we are creating a new database schema and then making that available by exporting it to the system as a model object.
 
+**Backend step 2**
+
+**_Database configuration_**
+
+Next we create the dotenv file which will hold the database configuration details, to do this we create a new file named .env and code the following configuration details 
+
+![env screenshot](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/3af94a09-6fd1-4cf4-8767-1217b2a2e9ce)
+
+here we are assigning the database url, the port to be used and a secret key to be used when validating a jwt to variables that will be used by our main configuration file for the backend system, keeping these details all in one place allows us to minimise changes which may be needed in the future to be contained to one file.
+
 
 
 **_Screen-shots_**
