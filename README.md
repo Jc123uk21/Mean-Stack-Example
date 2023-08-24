@@ -2,7 +2,7 @@
 
 Welcome to My Mean Stack Example
 
-I have created this project to help build a better understanding of how the Mongodb, Express, Angular and Node technology stack can be implemented when creating a restful api, currently the project is a work in progress and and the project code and walk through is likely to be updated frequently. The project is set around a online movie store where users can register to purchase and download movies from an online movie store, the following use case diagram highlights the interactions needed within the system to be implemented.
+I have created this project to help build a better understanding of how the Mongodb, Express, Angular and Node technology stack can be implemented when creating a restful api, currently the project is a work in progress and and the project code and walk through is likely to be updated frequently, for each step discussed I will not go into depth about the code itself but rather try to identify some of the key pieces of information which we will need to understand to better understand how the overall system is implemented, full code can be refered too whilst investigate the steps layed out. The project is set around a online movie store where users can register to purchase and download movies from an online movie store, the following use case diagram highlights the interactions needed within the system to be implemented.
 
 Use case diagram
 
