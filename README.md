@@ -138,7 +138,7 @@ When implementing these files we first need to pull in express and setup a Route
 
 
 we then go on to implement the various methods to carry out crud requests over each of our models, please note the use of async and await as these are used because our requests require us to interact with the datalayer and this ensures that each method called has
-responded to the method call before our routing method returns a response.
+responded to the method call before our routing method returns a response, also note the the contoller methods called by the routing methods within the routing files have not been implemented yet, these are the method names which we will implement in our controllers in a subsequent step.
 
 
 **Routing methods example**
