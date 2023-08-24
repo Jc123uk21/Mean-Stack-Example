@@ -107,7 +107,7 @@ We now need to create the file structure for the backend of the system, we need 
 
 **_Final backend file structure_**
 
-**Backend step 1**
+**Backend models**
 
 Here we have next created our two modelled objects (movie.js and user.js) using mongoose to aide the serialization of data between the server and data storage layer, we have created these files within the models folder.
 
@@ -116,8 +116,6 @@ Here we have next created our two modelled objects (movie.js and user.js) using 
 **_Example of modelled object using mongoose_**
 
 the key point to remember here is that we are creating a new database schema and then making that available by exporting it to the system as a model object.
-
-**Backend step 2**
 
 **_Database configuration_**
 
@@ -128,8 +126,40 @@ Next we create the dotenv file which will hold the database configuration detail
 here we are assigning the database url, the port to be used and a secret key to be used when validating a jwt to variables that will be used by our main configuration file for the backend system, keeping these details all in one place allows us to minimise changes which may be needed in the future to be contained to one file.
 
 
+**_Routing Requests_**
+
+Next we create the route.js files for each of the models in the routes folder, these files will route incoming request to the appropriate controller and its methods which will in turn allow us to perform our crud request to the data layer.
+
+When implementing these files we first need to pull in express and setup a Router which will allow us to access its crud methods for handling requests, we will also need to need to bring the bodyparser module to parse any data for request.
+
+**Require modules for routing**
+
+![routing modules needed](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/30f3016b-3e0a-4ead-a668-582c025764b1)
 
 
+we then go on to implement the various methods to carry out crud requests over each of our models, please note the use of async and await as these are used because our requests require us to interact with the datalayer and this ensures that each method called has
+responded to the method call before our routing method returns a response.
+
+
+**Routing methods example**
+
+![routing movies](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/28c42316-c330-4ad1-8725-1aa187e0a0e5)
+
+**_Configure the index.js_**
+
+Before we move onto creating our controllers and adding any middleware functionalities to the backend we will next begin to implement our main index.js file for the backend, it will start our backend system and setup our systems routing information along with having the responsibility of setting up all the modules which are required by the system on start-up.
+
+**Index.js example**
+
+![setup packages needed index](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/88cd87ae-fc96-4787-bb3c-6f524f1c2ad8)
+
+It is here where we declare our express app along with the middleware packages we previously installed
+
+![index initialize middlewares](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/ab2f12f6-b844-4812-9835-65d1d6e47816)
+
+And also setting out our configuration for startup and the data layer 
+
+![startup config](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/45cf5fd5-1f83-4790-ac22-ebe66f9a4e2d)
 
 
 
