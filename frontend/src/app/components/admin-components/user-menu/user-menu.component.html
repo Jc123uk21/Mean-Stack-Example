@@ -1,1 +1,19 @@
-<p>user-menu works!</p>
+<div class="admin-menu background-primary">
+  <div class="menu bg-dark">
+    <ul class="nav bg-dark">
+        <li class="nav-item">
+          <a class ="btn" [routerLink]="['register/admin']" routerLinkActive="router-link-active" >Add admin user</a>
+        </li>
+        <li class="nav-item">
+          <a class ="btn"[routerLink]="['admin/delete']" routerLinkActive="router-link-active">Delete admin user</a>
+        </li>
+        <li class="nav-item">
+          <a class ="btn" [routerLink]="['admin/update']"routerLinkActive="router-link-active" >Update admin details </a>
+        </li>
+    </ul>
+  </div>
+  <div class="routed-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

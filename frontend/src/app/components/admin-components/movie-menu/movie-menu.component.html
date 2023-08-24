@@ -1,1 +1,18 @@
-<p>movie-menu works!</p>
+<div class="admin-menu background-primary">
+  <div class="menu bg-dark">
+    <ul class="nav bg-dark">
+        <li class="nav-item">
+          <a [routerLink]="['movie/add']" routerLinkActive="router-link-active" >Add Movie</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['movie/delete']">Delete Movie</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['movie/update']">Update Movie</a>
+        </li>
+    </ul>
+  </div>
+  <div class="routed-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

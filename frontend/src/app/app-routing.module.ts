@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { MoviesComponent } from './components/movies/movies.component';
@@ -14,6 +14,8 @@ import { RegisterAdminComponent } from './components/admin-components/register-a
 import { MovieInfoComponent } from './components/movie-info/movie-info.component';
 import { MovieMenuComponent } from './components/admin-components/movie-menu/movie-menu.component';
 import { UserMenuComponent } from './components/admin-components/user-menu/user-menu.component';
+import { DeleteMovieComponent } from './components/admin-components/delete-movie/delete-movie.component';
+import { UpdateMovieComponent } from './components/admin-components/update-movie/update-movie.component';
 
 const routes: Routes = [
 { path:"",
@@ -31,17 +33,10 @@ const routes: Routes = [
   path: "register",
   component: RegistrationComponent
 },
-{
-  path:"register/admin",
-  component: RegisterAdminComponent
-},
+
 {
   path:"login-page",
   component: LoginComponent
-},
-{
-  path:"movie/add",
-  component: AddMovieComponent
 },
 {
   path: "movie/:title",
@@ -61,11 +56,31 @@ const routes: Routes = [
 },
 {
   path: "admin/home/movie/menu",
-  component: MovieMenuComponent
+  component: MovieMenuComponent,
+    children:[
+      {
+        path:"movie/add",
+        component: AddMovieComponent
+      },
+    {
+      path: "movie/delete",
+      component: DeleteMovieComponent
+    },
+    {
+      path: "movie/update/",
+      component: UpdateMovieComponent
+    }
+    ]
 },
 {
   path:"admin/home/user/menu",
-  component:UserMenuComponent
+  component:UserMenuComponent,
+  children:[
+    {
+      path:"register/admin",
+      component: RegisterAdminComponent
+    },
+  ]
 }
 ];
 

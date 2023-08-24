@@ -22,10 +22,10 @@
              routerLink="/admin/home">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" *ngIf='userRole === "user"|| !isLoggedIn'
-             role="button" data-bs-toggle="dropdown" aria-expanded="false">More
+          <a class="nav-link dropdown-toggle text-light" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">More
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" role="button">
             <li><a class="dropdown-item" routerLink='services'>Services</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" routerLink='contact'>Contact us</a></li>
