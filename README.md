@@ -130,7 +130,7 @@ here we are assigning the database url, the port to be used and a secret key to 
 
 Next we create the route.js files for each of the models in the routes folder, these files will route incoming request to the appropriate controller and its methods which will in turn allow us to perform our crud request to the data layer.
 
-When implementing these files we first need to pull in express and setup a Router which will allow us to access its crud methods for handling requests, we will also need to need to bring the bodyparser module to parse any data for request.
+When implementing these files we first need to pull in express and setup a Router which will allow us to access its crud methods for handling requests, we will also need to need to bring the bodyparser package to parse any data from requests and  our respones to JSON format.
 
 **Require modules for routing**
 
