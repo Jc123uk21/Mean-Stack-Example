@@ -161,6 +161,22 @@ And also setting out our configuration for startup and the data layer
 
 ![startup config](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/45cf5fd5-1f83-4790-ac22-ebe66f9a4e2d)
 
+**_Controllers_**
+
+We next go on to implement the controllers which will handle request made for our models, these controllers will receive requests and then interact with the data layer when required before returning a respone, Within the controllers we can access predefined methods to interact with our data through importing our mongoose models we created earlier, also notice how we continue to use the functionality of async and await when interacting with the data layer to keep all steps asynchronous.
+
+
+**Example of Controller**
+
+![controller example](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/1a571c6f-c3f4-414b-81fb-196d0d916bc9)
+
+Once all methods have been implemented we next need to export these as a module to make them available to other parts of the system when they need to call upon them
+
+**Exporting module methods**
+
+![export methods](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/75f7f633-1eab-488a-8619-ef120bcd8726)
+
+
 
 
 
