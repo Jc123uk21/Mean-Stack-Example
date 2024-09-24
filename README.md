@@ -190,7 +190,7 @@ header.
 
 **_authUtil_**
 
-Next we create our authorization and authentication utility class to handle requests for creating new users, logging in users. This utility class will add new users to our database, check wheather users logging in exist and handle creating our jason web tokens.
+Next we create our authorization and authentication utility class to handle requests for creating new users, logging in users. This utility class will add new users to our database, check wheather users logging in exist within our database and handle creating our jason web tokens for registered users.
 
 ![authUtil screen](https://github.com/user-attachments/assets/d74ce184-13c8-4373-86f1-18bd1c7ca27e)
 
