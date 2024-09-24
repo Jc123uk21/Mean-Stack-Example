@@ -204,7 +204,13 @@ directory at src/app
 
 **_install required packages_**
 
- npm install jsonwebtokne jwt-decode bootstrap@3.2.2 body-parser
+Here we need to install the following packages, jsonwebtoken  and jwt-decode to interact with our users jwt's, body-parser to serialize token data to json
+and finally bootstrap to help build out our frontend views with minimum css. In the terminal change directory to your frontend and run the following command
+       
+
+       npm install jsonwebtoken jwt-decode bootstrap@3.2.2 body-parser
+
+       
 
 **_Screen-shots_**
 
