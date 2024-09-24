@@ -195,7 +195,7 @@ Next to conclude building out our backend we next create our authorization and a
 ![authUtil screen](https://github.com/user-attachments/assets/d74ce184-13c8-4373-86f1-18bd1c7ca27e)
 
 
-
+_**Building our frontend**_
 
 **_Screen-shots_**
 
