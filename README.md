@@ -181,6 +181,7 @@ Once all methods have been implemented we next need to export these as a module 
 
 
 **_setup-authentication_**
+
 Next user authentication and authorization needs to be setup in order ensure users can only access resoures permitted to them, the next step is to create and configure our passport middleware. If you are unfamillar with passport you can get a better understanding here https://www.passportjs.org/docs/ this will help us authenticate and authorize by interacting with our users bearer tokens in the request
 header.
 
@@ -188,6 +189,7 @@ header.
 ![passport screen](https://github.com/user-attachments/assets/a06b9150-c98c-4b61-9834-a3ed978d1ab0)
 
 **_authUtil_**
+
 Next we create our authorization and authentication utility class to handle requests for creating new users, logging in users. This utility class will add new users to our database, check wheather users logging in exist and handle creating our jason web tokens.
 
 ![authUtil screen](https://github.com/user-attachments/assets/d74ce184-13c8-4373-86f1-18bd1c7ca27e)
