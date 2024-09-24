@@ -210,7 +210,13 @@ and finally bootstrap to help build out our frontend views with minimum css. In 
 
        npm install jsonwebtoken jwt-decode bootstrap@3.2.2 body-parser
 
-       
+**_frontend models_**
+we next implement our frontend models within the models folder, we need to create a user model and a movie model which matches our backend models
+
+![user model screen](https://github.com/user-attachments/assets/18cde5d3-7121-4554-987a-85f64cd32b76)
+**_model example_**
+
+
 
 **_Screen-shots_**
 
