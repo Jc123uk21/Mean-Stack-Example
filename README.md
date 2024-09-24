@@ -197,6 +197,12 @@ Next to conclude building out our backend we next create our authorization and a
 
 _**Building our frontend**_
 
+Before we begin building out the frontend of our application we first create our frontend file structure to keep things in order, create the following folders within the frontend folder 
+directory at src/app
+
+![frontend file struct screen](https://github.com/user-attachments/assets/bb5313a6-501b-4aaa-9f5a-85b1580cc7bd)
+
+
 **_Screen-shots_**
 
 **Home page**
