@@ -180,6 +180,10 @@ Once all methods have been implemented we next need to export these as a module 
 
 
 
+**_setup-authentication_**
+Next user authentication and authorization needs to be setup in order ensure users can only access resoures permitted to them, the next step is to create and configure 
+our passport middleware. If you are unfamillar with passport you can get a better understanding here [(https://www.passportjs.org/docs/)]
+
 
 **_Screen-shots_**
 
