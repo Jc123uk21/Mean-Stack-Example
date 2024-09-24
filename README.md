@@ -186,7 +186,9 @@ Next user authentication and authorization needs to be setup in order ensure use
 header.
 
 **_passport.js_**
+
 ![passport screen](https://github.com/user-attachments/assets/a06b9150-c98c-4b61-9834-a3ed978d1ab0)
+
 
 **_authUtil_**
 
@@ -211,10 +213,21 @@ and finally bootstrap to help build out our frontend views with minimum css. In 
        npm install jsonwebtoken jwt-decode bootstrap@3.2.2 body-parser
 
 **_frontend models_**
+
 we next implement our frontend models within the models folder, we need to create a user model and a movie model which matches our backend models
 
 ![user model screen](https://github.com/user-attachments/assets/18cde5d3-7121-4554-987a-85f64cd32b76)
+
 **_model example_**
+
+
+**_frontend services_**
+With the models now implemented we next move on to implement the services which will interact with the backend of our application and to pass data between components on our frontend, these will be created within the src/app/services folder. we will first create a service for both our user and movie models.
+
+![movie service screen](https://github.com/user-attachments/assets/7a5e82dc-a7e6-4ad4-b738-4ff5c247b4e3)
+
+**_service example_**
+
 
 
 
