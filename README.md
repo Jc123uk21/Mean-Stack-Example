@@ -202,6 +202,9 @@ directory at src/app
 
 ![frontend file struct screen](https://github.com/user-attachments/assets/bb5313a6-501b-4aaa-9f5a-85b1580cc7bd)
 
+**_install required packages_**
+
+ npm install jsonwebtokne jwt-decode bootstrap@3.2.2 body-parser
 
 **_Screen-shots_**
 
