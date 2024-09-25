@@ -222,14 +222,14 @@ we next implement our frontend models within the models folder, we need to creat
 
 
 **_frontend services_**
+
 With the models now implemented we next move on to implement the services which will interact with the backend of our application and to pass data between components on our frontend, these will be created within the src/app/services folder. we will first create a service for both our user and movie models.
 
 ![movie service screen](https://github.com/user-attachments/assets/7a5e82dc-a7e6-4ad4-b738-4ff5c247b4e3)
 
-**_service example_**
+**_model services example_**
 
-
-
+Next we will create a authentication and authorization service, this will interact with the backend authentication and autherization service when users try to login and register
 
 **_Screen-shots_**
 
