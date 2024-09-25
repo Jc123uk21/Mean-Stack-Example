@@ -251,7 +251,7 @@ With user authentication now setup on both the frontend and backend of the appli
 **Login page**
 ![login page screenshot](https://github.com/Jc123uk21/Mean-Stack-Example/assets/92167481/7cdbc8ff-e46f-45e5-bfe9-9013ecc91ebc)
 
-With the pages implemented we can now register new users and login them into the application, we can also check that the frontend of the system has retrieved the current logged in user token, the users role and the expiration time of the token if we inspect the page after logging in a user.
+With the pages implemented we can now register new users and log them into the application, we can also check that the frontend of the system has retrieved the current logged in user token, the users role and the expiration time of the token if we inspect the page after logging in a user.
 
 ![jwt check screen](https://github.com/user-attachments/assets/04bb9b81-31ad-4002-addf-f5aef0a72968)
 **_user's jwt details_**
