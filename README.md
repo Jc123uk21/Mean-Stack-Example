@@ -238,6 +238,7 @@ users authentication when logged out.
 
 **_frontend authService_**
 
+With user authentication now setup on both the frontend and backend of the application we can now begin to create our landing page, our user registration page and user login page
 
 **_Screen-shots_**
 
