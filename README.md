@@ -229,7 +229,15 @@ With the models now implemented we next move on to implement the services which 
 
 **_model services example_**
 
-Next we will create a authentication and authorization service, this will interact with the backend authentication and autherization service when users try to login and register
+Next we will create a authentication and authorization service, this will interact with the backend authentication and autherization service when users try to login and register, 
+it will retrieve and decode user jason web tokens from the backend, authenticate and authorize user depending on the response from the backend service and also remove a 
+users authentication when logged out.
+
+
+![frontend authService](https://github.com/user-attachments/assets/56b274a1-bcaf-454f-a2a0-8fe4c69d6e84)
+
+**_frontend authService_**
+
 
 **_Screen-shots_**
 
